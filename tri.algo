@@ -1,0 +1,23 @@
+ALGORITHM tri sel
+VAR
+ tab : ARRAY_Of INTEGER [5];
+  i= INTEGER;  
+BEGIN
+ tab:= {3,5,6,8,1};
+ procedure triInsertion(tab:integer )
+   k: integer;
+  tmp: integer;
+  BEGIN
+ for (i  from 0 to 4 step -1) 
+    tmp:= tab[i];
+    k = i; 
+   while (k > 1 et tab[k - 1] > tmp) do
+      tab[k] := tab[k - 1];
+      k := k - 1;
+    fin tant que
+  tab[k] :=tmp;
+ END_for
+
+END
+
+END
